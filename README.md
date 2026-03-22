@@ -1,0 +1,1 @@
+# Privacy-Policy-for-Where-Did-I-See-That-Chrome-Extension
