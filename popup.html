@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where Did I See That?</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>🔍 Where Did I See That?</h1>
+      <div class="stats" id="stats">Loading...</div>
+    </div>
+    
+    <!-- Search Box -->
+    <div class="search-box">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search your browsing history..."
+        autofocus
+      >
+      <div class="search-hint">
+        Try: "AI article", "recipe chocolate", "github project"
+      </div>
+    </div>
+    
+    <!-- Results -->
+    <div class="results" id="results">
+      <div class="empty-state">
+        <div class="empty-icon">📚</div>
+        <p>Start typing to search through your last 30 days of browsing</p>
+        <p class="empty-hint">We've captured every page you've visited</p>
+      </div>
+    </div>
+    
+    <!-- Loading -->
+    <div class="loading" id="loading" style="display: none;">
+      <div class="spinner"></div>
+      <p>Searching...</p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
